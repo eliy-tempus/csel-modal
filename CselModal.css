@@ -1,0 +1,50 @@
+@keyframes csel-modal-fade{from{opacity:0}to{opacity:1}}
+@keyframes csel-modal-fade-back{from{opacity:1}to{opacity:0}}
+
+.csel-modal {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #00000055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.csel-modal-window {
+    overflow: hidden;
+    border-radius: .5em;
+    max-width: 600px;
+    width: 100%;
+    background: white;
+}
+.csel-modal-window > *, .csel-modal-footer button { padding: 1em }
+
+.csel-modal-header { background: #eee }
+.csel-modal-header h2 { margin: 0 }
+.csel-modal-close {
+    float: right;
+    background: red;
+    height: 1.5em;
+    width: 1.5em;
+    display: block;
+    text-align: center;
+    line-height: 1.5em;
+    border-radius: 0.75em;
+    cursor: pointer;
+    color: white;
+}
+.csel-modal-footer {
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+.csel-modal-footer button {
+    border: none;
+    border-radius: .5em;
+    display: block;
+    cursor: pointer;
+}
