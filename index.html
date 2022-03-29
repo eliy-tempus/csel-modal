@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="./CselModal.css" />
   </head>
   <body>
-    <button id="btn">ddd</button>
+    <pre
+      style="color: #000020; background: #f6f8ff"
+    ><span style='color:#200080; font-weight:bold; '>const</span> modal <span style='color:#308080; '>=</span> <span style='color:#200080; font-weight:bold; '>new</span> CselModal<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>
+      header<span style='color:#406080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>Hello</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span>
+      content<span style='color:#406080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>Hello world!</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span>
+      speed<span style='color:#406080; '>:</span> <span style='color:#008c00; '>1000</span><span style='color:#308080; '>,</span>
+      buttons<span style='color:#406080; '>:</span> <span style='color:#308080; '>[</span>
+        <span style='color:#406080; '>{</span> text<span style='color:#406080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>Отмена</span><span style='color:#800000; '>"</span> <span style='color:#406080; '>}</span><span style='color:#308080; '>,</span>
+        <span style='color:#406080; '>{</span>
+          text<span style='color:#406080; '>:</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>Подтвердить</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span>
+          action<span style='color:#406080; '>:</span> <span style='color:#308080; '>(</span><span style='color:#308080; '>)</span> <span style='color:#308080; '>=</span><span style='color:#308080; '>></span> <span style='color:#406080; '>{</span>
+            console<span style='color:#308080; '>.</span><span style='color:#200080; font-weight:bold; '>log</span><span style='color:#308080; '>(</span><span style='color:#008c00; '>123</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+          <span style='color:#406080; '>}</span><span style='color:#308080; '>,</span>
+        <span style='color:#406080; '>}</span><span style='color:#308080; '>,</span>
+      <span style='color:#308080; '>]</span><span style='color:#308080; '>,</span>
+    <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    
+    document<span style='color:#308080; '>.</span>querySelector<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>#btn</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>onclick <span style='color:#308080; '>=</span> <span style='color:#308080; '>(</span><span style='color:#308080; '>)</span> <span style='color:#308080; '>=</span><span style='color:#308080; '>></span> <span style='color:#406080; '>{</span>
+      modal<span style='color:#308080; '>.</span>open<span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+    <span style='color:#406080; '>}</span><span style='color:#406080; '>;</span>
+    </pre>
+    <!--Created using ToHtml.com on 2022-03-29 12:09:07 UTC -->
+    <button id="btn">Result</button>
     <script>
       const modal = new CselModal({
         header: "Hello",
